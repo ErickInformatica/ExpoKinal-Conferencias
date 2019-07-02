@@ -15,6 +15,7 @@ function registrarCharla(req, res) {
         charla.numeroAsiento = params.numeroAsiento;
         charla.fecha = params.fecha;
         charla.capacidad = params.numeroAsiento;
+        charla.image = params.image;
         charla.ocupados = [];
         Charla.find({$or: [
             {nombreCharla: charla.nombreCharla},

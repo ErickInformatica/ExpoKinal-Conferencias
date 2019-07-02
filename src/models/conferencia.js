@@ -12,6 +12,7 @@ var CharlaSchema = Schema({
     hora:Date,
     fecha: Date,
     capacidad: Number,
+    image: String,
     ocupados: [{type: Schema.ObjectId, ref: 'User'}]
 });
 
