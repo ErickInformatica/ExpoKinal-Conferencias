@@ -10,7 +10,7 @@ var CharlaSchema = Schema({
     salon: String,
     numeroAsiento:Number,
     hora:Date,
-    fecha: Date,
+    fecha: String,
     capacidad: Number,
     image: String,
     ocupados: [{type: Schema.ObjectId, ref: 'User'}]
