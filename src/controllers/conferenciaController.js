@@ -18,8 +18,7 @@ function registrarCharla(req, res) {
         charla.image = params.image;
         charla.ocupados = [];
         Charla.find({$or: [
-            {nombreCharla: charla.nombreCharla},
-            {salon: charla.salon}
+            {nombreCharla: charla.nombreCharla}
         ]}).exec((err, charlas)=>{
             
             if(err) return res.status(500).send({message: 'Error en la peticion de usuario'})
